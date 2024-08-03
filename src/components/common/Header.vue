@@ -2,15 +2,15 @@
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-spacer"></div>
-      <div class="navbar-logo">README</div>
+      <router-link to="/" class="navbar-logo">README</router-link>
       <div class="navbar-profile" ref="dropdownRef">
         <div class="profile-image" @click="toggleDropdown">
           <img :src="userImage" alt="프로필" />
         </div>
         <div v-if="isDropdownOpen" class="dropdown-menu">
-          <a href="/profile" class="dropdown-item">내 정보</a>
-          <a href="/login" class="dropdown-item">로그인</a>
-          <a href="/write" class="dropdown-item">글 쓰기</a>
+          <router-link to="/profile" class="dropdown-item">내 정보</router-link>
+          <router-link to="/login" class="dropdown-item">로그인</router-link>
+          <router-link to="/community/write" class="dropdown-item">글 쓰기</router-link>
         </div>
       </div>
     </div>

@@ -15,12 +15,11 @@ export default {
 <style>
 .footer {
   width: 100%;
-  height: 50px;
+  height: 150px;
   background-color: #333333;
   color: white;
   display: block;
   padding: 10px 0;
-  position: fixed;
   bottom: 0;
 }
 .footer div{
