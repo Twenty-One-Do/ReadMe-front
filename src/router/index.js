@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '@/components/HomePage.vue';
-import LoginPage from '@/components/LoginPage.vue';
-import SignupPage from '@/components/SignupPage.vue';
+import LoginPage from '@/components/auth/LoginPage.vue';
+import RegisterPage from '@/components/auth/RegisterPage.vue';
 import ProfilePage from '@/components/ProfilePage.vue';
 import PortfolioPage from '@/components/portfolio/PortfolioPage.vue';
 import PortfolioList from '@/components/portfolio/PortfolioList.vue';
@@ -21,9 +21,9 @@ const routes = [
     component: LoginPage
   },
   {
-    path: '/signup',
-    name: 'SignupPage',
-    component: SignupPage
+    path: '/register',
+    name: 'RegisterPage',
+    component: RegisterPage
   },
   {
     path: '/profile',
